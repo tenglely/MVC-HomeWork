@@ -14,7 +14,7 @@ import com.teng.dao.UserDao;
 import com.teng.factory.Factory;
 
 /**
- * Servlet implementation class Add
+ * 用于添加用户
  */
 @WebServlet(urlPatterns={"/add"})
 public class Add extends HttpServlet {

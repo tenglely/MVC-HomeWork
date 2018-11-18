@@ -1,3 +1,5 @@
 里面的servlet包为各个操作分开的，以此来方便读者阅读。
 除此之外，读者可根据需要，减少耦合，将所有servlet整合在一个内。
 具体可观看 servlet里的 controller类
+用上面时，
+<form>标签内的需改为 add.udo/delete.udo等与controller类里方法名相同的名字，并加上 .udo

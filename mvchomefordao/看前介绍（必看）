@@ -3,3 +3,4 @@
 具体可观看 servlet里的 controller类
 用上面时，
 <form>标签内的需改为 add.udo/delete.udo等与controller类里方法名相同的名字，并加上 .udo
+用了controller类请不要使用sevlet包中其他类，会运行不了

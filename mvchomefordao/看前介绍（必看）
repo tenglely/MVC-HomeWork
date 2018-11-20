@@ -2,5 +2,5 @@
 除此之外，读者可根据需要，减少耦合，将所有servlet整合在一个内。
 具体可观看 servlet里的 controller类
 用上面时，
-<form>标签内的需改为 add.udo/delete.udo等与controller类里方法名相同的名字，并加上 .udo
+<form>标签内的需改为 add.udo/delete.udo/search.udo/update.udo/login.udo/等与controller类里方法名相同的名字，并加上 .udo,改少会启动不了
 用了controller类请不要使用sevlet包中其他类，会运行不了

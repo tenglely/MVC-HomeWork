@@ -145,6 +145,27 @@ public class UserDaoImpl implements UserDao {
 		return list;
 	}
 
-	
+	@Override
+	public User login(String username, String password) {
+		String sql="select * from user where name='"+username+"' and password='"+password+"'";
+		ResultSet rs=DbUtil.executeQuery(sql);
+		User user=new User();
+		try {
+			if(rs.next()){
+				user.setName(rs.getString("name"));
+				user.setOther(rs.getString("other"));
+				user.setEmail(rs.getString("email"));
+				user.setUserclass(rs.getString("userclass"));
+				user.setSex(rs.getString("sex"));
+				user.setHobby(rs.getString("hobby"));
+				user.setDate(rs.getString("date"));		
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		DbUtil.close();
+		return user;
+	}
 
 }

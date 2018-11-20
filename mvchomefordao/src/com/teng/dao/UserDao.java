@@ -45,4 +45,11 @@ public interface UserDao {
 	 * @return
 	 */
 	public List<User> findAll();
+	/**
+	 * 用户登录
+	 * @param username
+	 * @param password
+	 * @return
+	 */
+	public User login(String username, String password);
 }
